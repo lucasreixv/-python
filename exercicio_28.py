@@ -77,9 +77,28 @@ while True:
 
     elif opção == 2:
         produto.mostrar()
-      
-     #buscar_produto(produtos)
-            
+
+
+    elif opção ==3:
+        print("\nProdutos disponíveis:")
+
+        #aqui ele percorre a lista e mostra todos os produtos toda vez que for comprar
+        for produto in produtos:
+        
+            print(f"Produto: {produto['nome']} , Preço: {produto['preço']} , Estoque: {produto['estoque']}")
+
+        nome_produto = input("Qual produto deseja comprar?: ")
+
+        #aqui ele tenta encontrar o produto digitado
+        produto_encontrado = buscar_produto(produtos, nome_produto)
+
+        if produto_encontrado is None:
+
+            print("Produto não encontrado")
+
+        else:
+
+
 
           
             
