@@ -4,6 +4,17 @@ import os #importa a biblioteca os, que serve para trabalhar com arquivos e past
 ARQUIVO = r"C:\Users\1bmod\Documents\manuelucas.py\cliente.TXT" #guarda o caminho onde o arquivo clientes.txt vai ser salvo
 # r significa raw string, para o python entender as barras \ corretamente
 
+CYAN = "\033[36m"
+GREEN = "\033[32m"
+YELLOW = "\033[33m"
+RED = "\033[31m"
+LIGHT_BLUE = "\033[94m"
+LIGHT_PINK = "\033[38;5;218m"
+PINK = "\033[95m"       # Magenta claro (parece rosa em muitos terminais)
+HOT_PINK = "\033[38;5;205m"  # Rosa choque (256 cores)
+RESET = "\033[0m"
+ORANGE = "\033[38;5;208m"
+
 
 class Cliente: #criando uma classe chamada cliente, o molde
     def __init__(self, nome, idade, email, telefone): # é executado automaticamente quando a gente cria um objeto da classe, o metodo construtor feito para inicializar o objeto com os dados qe ele preicsa ter ao ser criado
@@ -29,7 +40,7 @@ class SistemaCadastro: #apenas criando
     def cadastrar_cliente(self):
 
         while True: 
-                nome = str(input("Nome: ")).strip() # strip  metodo que tira espaço do começo e do fim
+                nome = str(input(F"{CYAN}Nome: ")).strip() # strip  metodo que tira espaço do começo e do fim
 
                 if nome == "": # == igualdade
                     print("O nome não pode ser vazio.") 
@@ -103,10 +114,12 @@ class SistemaCadastro: #apenas criando
 
         while True:
 
-            print("\n~~~~~~~~MENU PRINCIPAL~~~~~~~~~~")
-            print("1 - Cadastrar cliente")
-            print("2 - Listar clientes")
-            print("3 - Sair")
+            print(f"{HOT_PINK} \n~~~~~~~~MENU PRINCIPAL~~~~~~~~~~ {RESET}")
+            print(f"{PINK}1 - Cadastrar cliente{RESET}")
+            print(f"{LIGHT_PINK}2 - Listar clientes{RESET}")
+            print(f"{PINK}3 - Editar Cliente{RESET}")
+            print(f"{LIGHT_PINK}4 - Ver cadastro atualizado{RESET}")  
+            print(f"{HOT_PINK}5- Sair{RESET}")          
             print("--------------------------------")
 
             try:
