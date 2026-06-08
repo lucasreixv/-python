@@ -1,0 +1,15 @@
+Nome: lucas
+Idade: 17
+E-mail: lucasrabelo@
+Telefone: 11990156604
+--------------------------------------
+Nome: mfs
+Idade: 18
+E-mail: adnbfjls@
+Telefone: 11111111111111111
+--------------------------------------
+Nome: manu
+Idade: 18
+E-mail: manuela@
+Telefone: 11111111111111111111
+--------------------------------------
