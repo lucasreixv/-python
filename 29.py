@@ -35,7 +35,7 @@ class SistemaCadastro: #apenas criando
                     print("O nome não pode ser vazio.") 
 
                 elif not nome.isalpha(): #o metodo isdigit() verifica se o usuario digitou apenas numeros
-                    print("Digite apenas letras para digitar seu nome!")
+                    print("Digite apenas letras para digitar seu nome")
                 else:
                     break
 
